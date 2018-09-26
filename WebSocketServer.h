@@ -98,15 +98,11 @@ private:
 
     String origin;
     String host;
-    bool hixie76style;
 
     // Discovers if the client's header is requesting an upgrade to a
     // websocket connection.
     bool analyzeRequest(int bufferLength);
 
-#ifdef SUPPORT_HIXIE_76
-    String handleHixie76Stream();
-#endif
     String handleStream();    
     
     int timedRead();

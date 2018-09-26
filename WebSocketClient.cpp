@@ -2,7 +2,6 @@
 
 //MS:
 
-#include "global.h"
 #include "WebSocketClient.h"
 
 #include "sha1.h"
